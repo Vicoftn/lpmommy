@@ -1,0 +1,47 @@
+A estratégia foi aprovada.
+
+Agora inicie exclusivamente a Fase 2.
+
+Antes de começar, leia novamente:
+
+knowledge/
+
+strategy/
+
+prompts/02-wireframe.md
+
+Sua missão agora é transformar toda a estratégia em wireframes.
+
+Não escreva copy.
+
+Não desenvolva código.
+
+Não altere nenhuma decisão estratégica.
+
+Produza exclusivamente:
+
+wireframes/
+
+portfolio.md
+
+pacientes.md
+
+alunos.md
+
+Cada arquivo deverá conter:
+
+- objetivo da página
+- jornada do usuário
+- estrutura completa das seções
+- ordem de leitura
+- componentes esperados
+- posicionamento dos CTAs
+- observações de UX
+
+Não utilize Lorem Ipsum.
+
+Não escreva textos finais.
+
+Descreva apenas a estrutura e a função de cada seção.
+
+Quando terminar, pare imediatamente e aguarde aprovação.

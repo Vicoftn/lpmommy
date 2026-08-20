@@ -1,0 +1,279 @@
+# Kickoff do Projeto
+
+Hoje você passa a fazer parte da equipe responsável pelo desenvolvimento da experiência digital da Dra. Ana Carolina Nogueira.
+
+Este repositório foi estruturado para que todo o projeto seja desenvolvido de forma incremental, documentada e consistente.
+
+Seu papel não é apenas responder prompts.
+
+Seu papel é atuar como um Product Team completo, respeitando rigorosamente a arquitetura deste projeto.
+
+---
+
+# Objetivo
+
+Desenvolver uma presença digital premium para a Dra. Ana Carolina Nogueira.
+
+A experiência será composta por três páginas independentes, porém conectadas pela mesma narrativa.
+
+## Página 01
+
+Portfolio
+
+Objetivo:
+
+Apresentar a Dra. Ana, sua filosofia, autoridade, posicionamento e identidade de marca.
+
+Esta página NÃO vende procedimentos.
+
+Esta página NÃO vende cursos.
+
+Sua única função é construir confiança suficiente para que o visitante escolha um dos caminhos disponíveis.
+
+CTA 01
+
+Quero ser paciente.
+
+CTA 02
+
+Quero aprender com a Dra.
+
+---
+
+## Página 02
+
+Pacientes
+
+Objetivo:
+
+Converter visitantes em pacientes.
+
+Toda a comunicação deverá reduzir objeções, transmitir segurança e facilitar o agendamento da primeira consulta.
+
+CTA principal
+
+Agendar avaliação.
+
+---
+
+## Página 03
+
+Alunos
+
+Objetivo:
+
+Converter profissionais interessados em cursos, mentorias e especializações.
+
+CTA principal
+
+Entrar para a próxima turma.
+
+---
+
+# Fonte única de verdade
+
+A identidade da marca está documentada na pasta:
+
+brandbook/
+
+Considere como referência principal:
+
+- Brandbook.pdf
+
+Também utilize todos os materiais disponíveis nesta pasta como apoio visual.
+
+Incluindo:
+
+- Fotografias
+- Logos
+- SVGs
+- Tipografia
+- Paleta de cores
+- Mockups
+- Papelaria
+- Elementos gráficos
+
+Sempre que precisar tomar uma decisão de design, consulte primeiro estes materiais.
+
+Nunca invente elementos visuais que contrariem o Brand Book.
+
+---
+
+# Hierarquia das decisões
+
+Sempre siga esta ordem de prioridade.
+
+1.
+
+Brand Book
+
+↓
+
+2.
+
+Arquivos da pasta knowledge/
+
+↓
+
+3.
+
+Arquivos produzidos durante o projeto
+
+↓
+
+4.
+
+Inferências próprias
+
+Caso exista qualquer conflito entre documentos, o Brand Book sempre prevalece.
+
+---
+
+# Estrutura do Projeto
+
+Todo o projeto deverá respeitar rigorosamente a seguinte arquitetura.
+
+knowledge/
+
+Contém todas as regras permanentes da marca.
+
+Nunca sobrescreva esses documentos sem justificativa.
+
+---
+
+strategy/
+
+Contém toda a estratégia.
+
+Estes documentos deverão servir como base para todas as próximas fases.
+
+---
+
+wireframes/
+
+Contém exclusivamente a estrutura das páginas.
+
+Não incluir copy definitiva.
+
+---
+
+copy/
+
+Contém exclusivamente os textos finais.
+
+---
+
+src/
+
+Contém a implementação da Landing.
+
+---
+
+# Fluxo obrigatório
+
+Este projeto está dividido em quatro fases.
+
+Cada fase depende da aprovação da anterior.
+
+Nunca avance automaticamente.
+
+Ao finalizar uma fase:
+
+- salve todos os documentos
+- pare imediatamente
+- aguarde aprovação
+
+---
+
+# Forma de trabalho
+
+Antes de produzir qualquer conteúdo:
+
+Leia todo o contexto existente.
+
+Evite repetir decisões já documentadas.
+
+Sempre consulte:
+
+knowledge/
+
+strategy/
+
+wireframes/
+
+copy/
+
+antes de gerar novos materiais.
+
+Considere estes documentos como memória permanente do projeto.
+
+---
+
+# Processo de decisão
+
+Antes de criar qualquer solução, reflita sobre:
+
+- Ela representa fielmente o Brand Book?
+
+- Ela fortalece a autoridade da Dra. Ana?
+
+- Ela melhora a experiência do usuário?
+
+- Ela aumenta a confiança do visitante?
+
+- Ela aproxima a marca do posicionamento premium?
+
+Se alguma resposta for negativa, reavalie a decisão.
+
+---
+
+# Restrições
+
+Nunca utilizar linguagem comercial agressiva.
+
+Nunca utilizar clichês de clínicas estéticas.
+
+Nunca criar promoções.
+
+Nunca criar senso artificial de urgência.
+
+Nunca descaracterizar a identidade visual definida pelo Brand Book.
+
+Nunca modificar decisões documentadas sem justificar o motivo.
+
+---
+
+# Qualidade esperada
+
+A landing deverá transmitir a sensação de uma marca construída ao longo de décadas.
+
+O visitante deve perceber imediatamente:
+
+- autoridade
+- sofisticação
+- inteligência
+- precisão
+- confiança
+- serenidade
+
+Toda decisão deve reforçar essa percepção.
+
+---
+
+# Início
+
+Leia completamente o projeto.
+
+Após compreender todo o contexto, inicie exclusivamente a execução da Fase 1 utilizando o arquivo:
+
+prompts/01-strategy.md
+
+Produza toda a documentação solicitada dentro da pasta:
+
+strategy/
+
+Quando concluir todos os documentos:
+
+Pare imediatamente.
+
+Aguarde a próxima instrução.

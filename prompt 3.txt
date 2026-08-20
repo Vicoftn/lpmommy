@@ -1,0 +1,47 @@
+Os wireframes foram aprovados.
+
+Agora execute exclusivamente a Fase 3.
+
+Leia novamente:
+
+knowledge/
+
+strategy/
+
+wireframes/
+
+prompts/03-copy.md
+
+Sua única responsabilidade é escrever toda a copy das três páginas.
+
+Não altere a estrutura.
+
+Não altere o posicionamento.
+
+Não invente novas seções.
+
+Produza:
+
+copy/
+
+portfolio.md
+
+pacientes.md
+
+alunos.md
+
+Escreva:
+
+- Headlines
+- Subheadlines
+- Corpo dos textos
+- Botões
+- Microcopies
+- FAQs
+- CTAs
+
+Toda a escrita deve seguir rigorosamente o tom definido em:
+
+knowledge/04-voice-and-tone.md
+
+Ao finalizar, pare imediatamente e aguarde aprovação.
