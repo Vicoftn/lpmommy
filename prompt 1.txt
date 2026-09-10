@@ -1,0 +1,56 @@
+# Início do Projeto
+
+Vamos iniciar oficialmente o desenvolvimento da Landing Page da Dra. Ana Carolina Nogueira.
+
+Todo o contexto necessário encontra-se neste repositório.
+
+Antes de qualquer ação, leia completamente os seguintes arquivos:
+
+knowledge/
+├── 01-project-goals.md
+├── 02-brandbook-summary.md
+├── 03-brand-rules.md
+├── 04-voice-and-tone.md
+└── 05-decision-log.md
+
+Em seguida, utilize o Brand Book localizado na raiz do projeto como principal fonte de verdade.
+
+Também leia cuidadosamente o prompt:
+
+prompts/01-strategy.md
+
+Sua missão nesta etapa é exclusivamente executar a Fase 1.
+
+## Regras
+
+Não desenvolva wireframes.
+
+Não escreva copy.
+
+Não produza código.
+
+Não avance para nenhuma outra fase.
+
+Sua única responsabilidade é produzir a documentação estratégica.
+
+## Arquivos obrigatórios
+
+Popule completamente os seguintes documentos:
+
+strategy/
+├── brand-analysis.md
+├── positioning.md
+├── personas.md
+├── information-architecture.md
+├── conversion-strategy.md
+└── sitemap.md
+
+Cada documento deve ser suficientemente detalhado para servir de referência para todas as próximas fases.
+
+Evite conteúdo genérico.
+
+Justifique todas as decisões com base no Brand Book.
+
+Quando concluir todos os arquivos, pare imediatamente e aguarde revisão humana.
+
+Não continue para a próxima etapa.
