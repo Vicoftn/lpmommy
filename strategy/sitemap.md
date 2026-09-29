@@ -42,4 +42,5 @@ Misturar os dois públicos dentro da mesma página de conversão dilui a especif
 
 ## 6. Fora de escopo nesta fase
 
-- Blog, área de conteúdo, loja de produtos, área de aluno logada — não fazem parte do escopo definido em `prompt_inicial.txt` e `knowledge/01-project-goals.md`. Caso surjam, exigem nova decisão registrada em `knowledge/05-decision-log.md` antes de qualquer produção.
+- Loja de produtos, área de aluno logada — seguem fora do escopo definido em `prompt_inicial.txt` e `knowledge/01-project-goals.md`. Caso surjam, exigem nova decisão registrada em `knowledge/05-decision-log.md` antes de qualquer produção.
+- ~~Blog, área de conteúdo~~ — revisado pela Decisão 015 (`knowledge/05-decision-log.md`): o escopo se abre para conteúdo editorial, como parte da Fase 4 (SEO/Content Engine). Ver `strategy/seo-content-strategy.md` para a arquitetura e o plano.
