@@ -21,7 +21,7 @@ Este documento registra a evolução do projeto de "landing page institucional" 
 - `alt` das imagens da bifurcação (Portfolio) é o texto do botão, não uma descrição da imagem.
 - Imagens-fonte em `public/images` pesam de 8 a 21MB cada (o Next otimiza na entrega, mas isso é ineficiente no repositório/build).
 - Sem página 404 personalizada.
-- Sem instrumentação de medição (Fase 5 ainda não iniciada).
+- ~~Sem instrumentação de medição~~ — implementado em 30/09/2026 (Decisão 021): Vercel Web Analytics + Speed Insights, eventos `whatsapp_click` e `ebook_download`.
 - Rodapé sem cidade/CEP — falta consistência de NAP com o Perfil da Empresa no Google (Decisão 020).
 
 **Sobre o domínio antigo:** era um site WordPress da mesma marca/negócio (não um domínio genérico) — teve tráfego e páginas indexadas (Decisão 019). O plano de migração trata isso como ativo (redirecionar o que tem valor), não como lixo a apagar. Ver checklist técnico na seção 5.
@@ -90,7 +90,7 @@ Google trata conteúdo de saúde como YMYL (Your Money or Your Life) e recompens
 | **2 · Business/Marketing** | Quem procura, com qual intenção, o que é sucesso? | Mapa de intenção de busca (seção 3), metas de aquisição (Google como eixo — Decisão 016) | Em andamento |
 | **3 · Structure/Content** | Onde mora cada conteúdo? | Arquitetura `/conteudo/[slug]` (seção 4), modelo de artigo | A iniciar |
 | **4 · SEO/Content Engine** | Como ser encontrada? | (a) Fundação técnica: canonical, og:image, JSON-LD, títulos/descrições, alt, redirects, 404, NAP consistente; (b) calendário editorial e primeiros artigos-âncora | Fundação técnica pendente de aprovação; conteúdo pendente da lista de procedimentos |
-| **5 · Measurement** | O que está funcionando? | Analytics sem cookies, eventos de conversão (clique WhatsApp por persona, envio do e-book), Search Console, processo manual via secretária como fallback (Decisão 018) | A iniciar (próximo pedido do usuário) |
+| **5 · Measurement** | O que está funcionando? | Analytics sem cookies, eventos de conversão (clique WhatsApp por persona, envio do e-book), Search Console, processo manual via secretária como fallback (Decisão 018) | Analytics implementado (Decisão 021); painel/rotina mensal de revisão ainda a definir |
 
 ---
 

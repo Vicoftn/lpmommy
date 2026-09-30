@@ -159,6 +159,18 @@ A Dra. Ana possui Perfil da Empresa no Google, com endereço em Curitiba/PR, CEP
 
 ---
 
+## Decisão 021
+
+A ferramenta de analytics do site (Fase 5) é **Vercel Web Analytics + Speed Insights**, não Google Analytics (GA4). Motivos:
+
+1. **Sem cookie, sem banner de consentimento.** GA4 identifica visitantes entre sessões via cookie, o que exige aviso de consentimento (LGPD) — normalmente um pop-up/banner, proibido por `knowledge/03-brand-rules.md`. A Vercel Analytics não usa cookie nem identificador persistente, então não precisa de banner.
+2. **Sem conta/infraestrutura nova.** Já está dentro do painel da Vercel, que já é usado para hospedar o site — nenhum cadastro, propriedade ou stream de dados adicional para configurar ou aprender a navegar.
+3. **Suficiente para as perguntas atuais:** volume de visitantes, páginas mais vistas, cliques no WhatsApp por persona (evento `whatsapp_click`, com o valor `paciente` ou `aluno`) e envios do e-book (`ebook_download` / `ebook_download_error`). Nenhum dado pessoal (nome/e-mail) é enviado nesses eventos.
+
+**Limite reconhecido:** não faz funis multi-etapa nem rastreamento de campanha paga. Se o projeto avançar para Google Ads (ver Decisão 016), a conversa sobre GA4/Google Ads Conversion — e sobre o banner de cookies que isso implica — deve ser reaberta nesse momento. Implementado e verificado em produção em 30/09/2026 (evento de pageview e de clique confirmados no painel da Vercel).
+
+---
+
 ## Próximas decisões
 
 Registrar todas as mudanças importantes aprovadas durante o projeto.
