@@ -171,6 +171,25 @@ A ferramenta de analytics do site (Fase 5) é **Vercel Web Analytics + Speed Ins
 
 ---
 
+## Decisão 022
+
+Análise comparativa com concorrente real (fordermclinic.com.br, Dra. Andressa Faucz) em 19/10/2026, feita sob pedido do usuário, definiu a arquitetura de **Procedimentos** (pilar "Procedimentos" de `strategy/seo-content-strategy.md`, seção 4):
+
+- Rotas: `/procedimentos` (hub, grid de cards) + `/procedimentos/[slug]` (página individual, template único reutilizável: intro → como funciona → para quem é indicada → o que pode proporcionar → CTA de WhatsApp específico do procedimento → procedimentos relacionados).
+- A página `/paciente` ganha uma seção com os cards de procedimentos, como entrada principal para esse conteúdo.
+
+**Emenda à Decisão 002** (Portfolio "não venderá procedimentos nem cursos"): o Portfolio ganha uma seção nova, estilo carrossel, com fotos reais de procedimentos em andamento (ex.: aplicação de preenchimento, microagulhamento) — sem preço, sem nome técnico, sem CTA de venda, só uma frase curta e link para `/paciente`. Motivo: visitante novo não tinha nenhuma pista visual de que a prática é real antes de decidir qual caminho seguir. A Decisão 002 permanece válida quanto a "não vender" — a seção é evidência visual, não oferta.
+
+**Avaliações/depoimentos:** mantidos como estão (vídeos do YouTube em `/paciente` e `/aluno`). Widget de Google Reviews avaliado e descartado por ora.
+
+**Antes/depois:** não implementado. Decisão explicitamente adiada — precisa de confirmação direta da Dra. Ana (e possivelmente de advogado) antes de qualquer trabalho de design ou código. Achado relevante que motiva a cautela: a concorrente usada como referência (Dra. Andressa Faucz) se apresenta como biomédica esteta, não cirurgiã-dentista — segue outro conselho profissional (CRBM), com regras de publicidade diferentes das do CFO que regem a Dra. Ana (CRO-PR 12088). As fotos de antes/depois vistas no site dela não tinham aviso de consentimento nem de variação de resultado. Copiar esse elemento não é risco equivalente entre as duas.
+
+**Achado complementar:** a página de Cursos e Mentorias da concorrente é a mais fraca do site dela (sem link para curso individual, sem formato, sem depoimento de aluno, sem CTA dedicado) — nossa página `/aluno` já é estruturalmente mais forte nesse ponto (estrutura da formação, suporte pós-curso, depoimentos em vídeo reais). Não é prioridade de melhoria.
+
+**Pendências para avançar com Procedimentos:** lista real dos procedimentos que a Dra. Ana realiza (bloqueador principal, segue pendente desde a Decisão 015); confirmação da Dra. sobre antes/depois.
+
+---
+
 ## Próximas decisões
 
 Registrar todas as mudanças importantes aprovadas durante o projeto.

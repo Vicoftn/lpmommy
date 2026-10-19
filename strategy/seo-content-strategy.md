@@ -59,12 +59,35 @@ Google trata conteúdo de saúde como YMYL (Your Money or Your Life) e recompens
 
 | Pilar | Conteúdo | Alimenta | Observação |
 |---|---|---|---|
-| **Procedimentos** | Uma página por procedimento real (o que é, para que serve, como ela avalia, cuidados, FAQ) | `/paciente` | Depende da lista de procedimentos (Dra. Ana — pendente) + validação CFO |
+| **Procedimentos** | Uma página por procedimento real (o que é, para que serve, como ela avalia, cuidados, FAQ) | `/paciente`, Portfolio | Arquitetura própria — ver 4.1. Depende da lista de procedimentos (Dra. Ana — pendente) |
 | **Palestras & ciência aplicada** | Registro do que já foi apresentado (Univ. de Leida 2024, Full Face Congress 2025, SBTI, Face Congress) | `/paciente` e `/aluno` | Conteúdo autoral, não replicável por concorrentes |
 | **Visagismo** | Extensão do e-book | `/paciente` e `/aluno`, prioritariamente Aluno (Decisão 017) | Pilar já validado |
-| **Formação/mentoria** | Método de ensino, o que uma especialização em HOF exige | `/aluno` | — |
+| **Formação/mentoria** | Método de ensino, o que uma especialização em HOF exige | `/aluno` | Já implementado com força — ver 4.1 |
 
-**Arquitetura proposta:** rota única `/conteudo/[slug]` com campo de categoria (procedimento, palestra, visagismo, formação), em vez de pastas separadas por tipo — um template, um sitemap, manutenção mais simples. Cada artigo termina com convite discreto para `/paciente` ou `/aluno`, nunca um CTA de venda.
+**Arquitetura dos pilares editoriais (Palestras, Visagismo, Formação):** rota única `/conteudo/[slug]` com campo de categoria, em vez de pastas separadas por tipo — um template, um sitemap, manutenção mais simples. Cada artigo termina com convite discreto para `/paciente` ou `/aluno`, nunca um CTA de venda.
+
+### 4.1 Procedimentos — arquitetura detalhada (Decisão 022, 19/10/2026)
+
+Definida após análise comparativa com concorrente real (fordermclinic.com.br). Rotas próprias, separadas do `/conteudo/[slug]` genérico, porque procedimento é página de serviço, não artigo editorial:
+
+```
+/procedimentos            → hub: grid de cards (foto, nome, 2-3 linhas, link)
+/procedimentos/[slug]     → página individual, template único:
+                             intro → como funciona → para quem é indicada →
+                             o que pode proporcionar → CTA de WhatsApp específico
+                             do procedimento → procedimentos relacionados
+```
+
+**Pontos de entrada:**
+- `/paciente` ganha uma seção com os cards de procedimentos — entrada principal.
+- Portfolio (`/`) ganha uma seção nova, estilo carrossel, com fotos reais de procedimento em andamento (sem preço, sem nome técnico, sem CTA de venda — só uma frase curta + link para `/paciente`). **Emenda a Decisão 002** — ver `knowledge/05-decision-log.md`, Decisão 022, para o racional completo.
+- Sem item novo no header/Nav global por ora (decisão explícita do usuário — manter a Nav minimalista atual).
+
+**Antes/depois:** avaliado e **não implementado**. Depende de confirmação direta da Dra. Ana, possivelmente com advogado — risco regulatório específico da profissão dela (CFO), diferente do que uma concorrente de outra categoria profissional enfrentaria. Detalhe completo na Decisão 022.
+
+**Avaliações/depoimentos:** mantidos como estão (vídeos do YouTube). Widget de reviews do Google avaliado e descartado por ora.
+
+**Comparativo com a página `/aluno`:** a análise também cobriu a página de cursos da concorrente, que se mostrou a mais fraca do site dela. `/aluno` já é estruturalmente mais forte no mesmo ponto — não é prioridade de melhoria no momento.
 
 ---
 
@@ -96,7 +119,8 @@ Google trata conteúdo de saúde como YMYL (Your Money or Your Life) e recompens
 
 ## 7. Pendências abertas
 
-1. Lista de procedimentos que a Dra. Ana realiza de fato (bloqueia o pilar "Procedimentos") — aguardando conversa do usuário com a Dra.
-2. Endereço exato como aparece no Perfil da Empresa do Google (rua, número, bairro) — para deixar o rodapé e os dados estruturados idênticos ao perfil (Decisão 020).
-3. Aprovação para implementar os itens 5 e 6 da seção 5 (redirects + página 404) — proposto, aguardando sim/não do usuário.
-4. Validação jurídica (CFO) antes de publicar qualquer página de procedimento.
+1. Lista de procedimentos que a Dra. Ana realiza de fato (bloqueia a implementação do pilar "Procedimentos") — aguardando conversa do usuário com a Dra.
+2. Confirmação da Dra. Ana (e possivelmente advogado) sobre usar ou não antes/depois nas páginas de procedimento (Decisão 022).
+3. Validação jurídica (CFO) antes de publicar qualquer página de procedimento, independente do antes/depois.
+
+~~Endereço exato do Perfil da Empresa~~ — resolvido (Decisão 020, rodapé atualizado). ~~Redirects + página 404~~ — resolvido, no ar desde 30/09/2026.
