@@ -190,6 +190,19 @@ Análise comparativa com concorrente real (fordermclinic.com.br, Dra. Andressa F
 
 ---
 
+## Decisão 023
+
+Padrão de `<title>` com termo de busca real + cidade, adotado para `/paciente` e `/aluno` (e que se repete em `/procedimentos/[slug]` quando a lista de procedimentos chegar — ver Decisão 022):
+
+- `/paciente`: "Harmonização Orofacial em Curitiba"
+- `/aluno`: "Mentoria VIP Full Face em Curitiba" (menção a "Be Younger HOF" fica na description, não no title — o title já soma 58 caracteres com o sufixo automático "— Ana Carolina Nogueira" do layout; incluir também a marca de ensino estourava o limite de ~60 caracteres do Google e cortava o texto no resultado de busca)
+
+Decisão sobre registro de mentorias ministradas (Decisão 022): fica como seção dentro de `/aluno` ("Turmas realizadas" — data, número da turma, referência à Be Younger HOF em cada linha), não como páginas individuais por turma. Motivo: conteúdo por turma seria fino demais (só data e número) para justificar uma URL própria — risco de conteúdo fino/duplicado no Google. Só reconsiderar página própria por turma se cada uma tiver conteúdo único (fotos, depoimento específico daquela edição). Avaliado e descartado colocar essa lista também no Portfolio — a seção "Prova de autoridade" já cobre credibilidade de ensino em nível mais alto para os dois públicos; detalhe operacional de turma pertence a `/aluno`, onde já está decidido quem quer ser aluno.
+
+Implementado e verificado em produção em 19/10/2026.
+
+---
+
 ## Próximas decisões
 
 Registrar todas as mudanças importantes aprovadas durante o projeto.
