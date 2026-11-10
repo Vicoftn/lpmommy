@@ -203,6 +203,22 @@ Implementado e verificado em produção em 19/10/2026.
 
 ---
 
+## Decisão 024
+
+Fundação técnica de SEO (Fase 4, parte que não depende de conteúdo novo da Dra.) implementada em 10/11/2026:
+
+- `canonical` em todas as 4 páginas.
+- `og:image`/Twitter Card por página (imagens próprias geradas a partir das fotos já existentes, 1200×630, em `public/og/`), com fallback pro Portfolio nas páginas sem imagem dedicada.
+- Dados estruturados (JSON-LD, tipo `Dentist`) no layout raiz — nome, endereço (igual ao Perfil da Empresa, Decisão 020), telefone, e-mail, CRO, Instagram. Presente em todas as páginas.
+- `alt` de imagem corrigido em duas fotos do Portfolio que descreviam o botão, não a imagem.
+- 404 com `noindex` explícito (Next.js já injeta um `noindex` próprio nela também — redundante, mas inofensivo).
+
+**Achado técnico registrado pra não repetir o erro:** definir `openGraph` no metadata de uma página do Next.js **substitui** o objeto inteiro herdado do layout, não mescla campo a campo — `site_name`/`locale`/`type` precisam ser repetidos em cada página que define `openGraph.images`, senão somem do HTML. `twitter` já herda normalmente, não tem esse problema.
+
+Verificado em produção (canonical, og:image e JSON-LD conferidos nas 4 URLs reais).
+
+---
+
 ## Próximas decisões
 
 Registrar todas as mudanças importantes aprovadas durante o projeto.

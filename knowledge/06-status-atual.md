@@ -1,6 +1,6 @@
 # Status atual do projeto
 
-Última atualização: 30/10/2026. Este documento é o ponto de partida pra retomar o projeto — resume o estado real das coisas sem precisar ler o `05-decision-log.md` inteiro. Em caso de dúvida sobre o porquê de alguma decisão, o decision-log tem o detalhe; este arquivo só diz **onde as coisas estão agora**.
+Última atualização: 10/11/2026. Este documento é o ponto de partida pra retomar o projeto — resume o estado real das coisas sem precisar ler o `05-decision-log.md` inteiro. Em caso de dúvida sobre o porquê de alguma decisão, o decision-log tem o detalhe; este arquivo só diz **onde as coisas estão agora**.
 
 Se você é um Claude novo retomando este projeto: leia este arquivo, depois `05-decision-log.md` por cima, e os arquivos de `strategy/` e `knowledge/` conforme a tarefa pedir. Os repositórios são:
 
@@ -16,7 +16,7 @@ Se você é um Claude novo retomando este projeto: leia este arquivo, depois `05
 - **Privacidade:** página `/privacidade`, linkada no rodapé/formulário/e-mail. CRO-PR 12088 exibido no rodapé, e-mail e política.
 - **Redirects + 404:** `/politica-de-privacidade` → `/privacidade`, `/project` → `/` (301). Página 404 própria, na identidade da marca.
 - **Analytics:** Vercel Web Analytics + Speed Insights (não GA4 — ver Decisão 021 pro porquê). Eventos: `whatsapp_click` (com a persona), `ebook_download`, `ebook_download_error`. Sem cookie, sem banner.
-- **SEO técnico básico:** sitemap.xml e robots.txt corretos, Search Console com propriedade de domínio verificada (`sc-domain:acnodontologia.com.br`), sitemap enviado, as 4 páginas com indexação solicitada manualmente. Títulos com termo de busca real: `/paciente` = "Harmonização Orofacial em Curitiba", `/aluno` = "Mentoria VIP Full Face em Curitiba" (ambos com "— Ana Carolina Nogueira" automático no final, via `layout.tsx`).
+- **SEO técnico:** sitemap.xml e robots.txt corretos, Search Console com propriedade de domínio verificada (`sc-domain:acnodontologia.com.br`), sitemap enviado, indexação confirmada (checado em 10/11/2026). Títulos com termo de busca real em `/paciente` e `/aluno`. `canonical`, `og:image`/Twitter Card por página e dados estruturados (JSON-LD, `Dentist`, com o endereço/telefone/CRO) nas 4 páginas, verificados em produção — ver Decisão 024.
 - **Rodapé:** endereço completo (Av. Mal. Floriano Peixoto, 306 – Conj. 61 – Centro, Curitiba – PR, 80010-130), igual ao Perfil da Empresa no Google (já existia e está correto).
 
 ## 2. Variáveis de ambiente / credenciais (não estão em nenhum arquivo do repositório)

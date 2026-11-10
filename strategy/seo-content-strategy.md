@@ -15,14 +15,14 @@ Este documento registra a evolução do projeto de "landing page institucional" 
 - Página de Política de Privacidade (`/privacidade`).
 - Domínio `acnodontologia.com.br` reaproveitado (Decisão 012) — não é domínio novo, tem histórico de tráfego real (Decisão 019).
 
-**Lacunas técnicas identificadas:**
-- Sem `canonical`, `og:image`, Twitter card ou dados estruturados (JSON-LD) em nenhuma página.
-- Títulos e descrições das páginas Paciente/Aluno são genéricos, sem termo de busca.
-- `alt` das imagens da bifurcação (Portfolio) é o texto do botão, não uma descrição da imagem.
-- Imagens-fonte em `public/images` pesam de 8 a 21MB cada (o Next otimiza na entrega, mas isso é ineficiente no repositório/build).
-- Sem página 404 personalizada.
+**Lacunas técnicas identificadas (histórico — ver o que já foi resolvido):**
+- ~~Sem `canonical`, `og:image`, Twitter card ou dados estruturados (JSON-LD) em nenhuma página~~ — implementado em 10/11/2026 (Decisão 024).
+- ~~Títulos e descrições das páginas Paciente/Aluno são genéricos, sem termo de busca~~ — implementado (Decisão 023).
+- ~~`alt` das imagens da bifurcação (Portfolio) é o texto do botão~~ — corrigido (Decisão 024).
+- Imagens-fonte em `public/images` pesam de 8 a 21MB cada (o Next otimiza na entrega, mas isso é ineficiente no repositório/build). **Ainda pendente** — não é urgente, não afeta o site no ar.
+- ~~Sem página 404 personalizada~~ — implementado (redirects + 404, 30/09/2026).
 - ~~Sem instrumentação de medição~~ — implementado em 30/09/2026 (Decisão 021): Vercel Web Analytics + Speed Insights, eventos `whatsapp_click` e `ebook_download`.
-- Rodapé sem cidade/CEP — falta consistência de NAP com o Perfil da Empresa no Google (Decisão 020).
+- ~~Rodapé sem cidade/CEP~~ — resolvido (Decisão 020), e agora também reaproveitado nos dados estruturados (Decisão 024).
 
 **Sobre o domínio antigo:** era um site WordPress da mesma marca/negócio (não um domínio genérico) — teve tráfego e páginas indexadas (Decisão 019). O plano de migração trata isso como ativo (redirecionar o que tem valor), não como lixo a apagar. Ver checklist técnico na seção 5.
 
@@ -112,7 +112,7 @@ Definida após análise comparativa com concorrente real (fordermclinic.com.br).
 | **1 · Brand** | — | Brandbook, knowledge | Concluída |
 | **2 · Business/Marketing** | Quem procura, com qual intenção, o que é sucesso? | Mapa de intenção de busca (seção 3), metas de aquisição (Google como eixo — Decisão 016) | Em andamento |
 | **3 · Structure/Content** | Onde mora cada conteúdo? | Arquitetura `/conteudo/[slug]` (seção 4), modelo de artigo | A iniciar |
-| **4 · SEO/Content Engine** | Como ser encontrada? | (a) Fundação técnica: canonical, og:image, JSON-LD, títulos/descrições, alt, redirects, 404, NAP consistente; (b) calendário editorial e primeiros artigos-âncora | Fundação técnica pendente de aprovação; conteúdo pendente da lista de procedimentos |
+| **4 · SEO/Content Engine** | Como ser encontrada? | (a) Fundação técnica: canonical, og:image, JSON-LD, títulos/descrições, alt, redirects, 404, NAP consistente; (b) calendário editorial e primeiros artigos-âncora | **(a) concluída** (Decisões 023 e 024); (b) pendente da lista de procedimentos |
 | **5 · Measurement** | O que está funcionando? | Analytics sem cookies, eventos de conversão (clique WhatsApp por persona, envio do e-book), Search Console, processo manual via secretária como fallback (Decisão 018) | Analytics implementado (Decisão 021); painel/rotina mensal de revisão ainda a definir |
 
 ---
