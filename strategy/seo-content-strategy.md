@@ -19,7 +19,7 @@ Este documento registra a evolução do projeto de "landing page institucional" 
 - ~~Sem `canonical`, `og:image`, Twitter card ou dados estruturados (JSON-LD) em nenhuma página~~ — implementado em 10/11/2026 (Decisão 024).
 - ~~Títulos e descrições das páginas Paciente/Aluno são genéricos, sem termo de busca~~ — implementado (Decisão 023).
 - ~~`alt` das imagens da bifurcação (Portfolio) é o texto do botão~~ — corrigido (Decisão 024).
-- Imagens-fonte em `public/images` pesam de 8 a 21MB cada (o Next otimiza na entrega, mas isso é ineficiente no repositório/build). **Ainda pendente** — não é urgente, não afeta o site no ar.
+- ~~Imagens-fonte em `public/images` pesam de 8 a 21MB cada~~ — comprimidas em 10/11/2026 (Decisão 025), ~120MB → ~8MB.
 - ~~Sem página 404 personalizada~~ — implementado (redirects + 404, 30/09/2026).
 - ~~Sem instrumentação de medição~~ — implementado em 30/09/2026 (Decisão 021): Vercel Web Analytics + Speed Insights, eventos `whatsapp_click` e `ebook_download`.
 - ~~Rodapé sem cidade/CEP~~ — resolvido (Decisão 020), e agora também reaproveitado nos dados estruturados (Decisão 024).

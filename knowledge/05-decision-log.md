@@ -219,6 +219,16 @@ Verificado em produção (canonical, og:image e JSON-LD conferidos nas 4 URLs re
 
 ---
 
+## Decisão 025
+
+Imagens-fonte em `public/images` (fotos direto da câmera, 8 a 22MB cada, ~120MB no total) foram redimensionadas (largura máxima 3840px) e recomprimidas (JPEG mozjpeg, qualidade 82), em 10/11/2026. Resultado: ~8MB no total (redução de 93%), sem perda visual perceptível (conferido lado a lado, com zoom em rosto/pele/cabelo, nas 3 fotos mais críticas, e teste visual das 3 páginas no navegador antes do commit).
+
+Não afeta o que o visitante já via — o `next/image` já servia versões otimizadas na entrega. O ganho é em peso do repositório, velocidade de build e de deploy.
+
+Script reutilizável adicionado em `site/scripts/compress-source-images.mjs`, para comprimir fotos novas que a Dra. envie no futuro antes de subir ao repositório.
+
+---
+
 ## Próximas decisões
 
 Registrar todas as mudanças importantes aprovadas durante o projeto.

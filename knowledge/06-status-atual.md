@@ -17,6 +17,7 @@ Se você é um Claude novo retomando este projeto: leia este arquivo, depois `05
 - **Redirects + 404:** `/politica-de-privacidade` → `/privacidade`, `/project` → `/` (301). Página 404 própria, na identidade da marca.
 - **Analytics:** Vercel Web Analytics + Speed Insights (não GA4 — ver Decisão 021 pro porquê). Eventos: `whatsapp_click` (com a persona), `ebook_download`, `ebook_download_error`. Sem cookie, sem banner.
 - **SEO técnico:** sitemap.xml e robots.txt corretos, Search Console com propriedade de domínio verificada (`sc-domain:acnodontologia.com.br`), sitemap enviado, indexação confirmada (checado em 10/11/2026). Títulos com termo de busca real em `/paciente` e `/aluno`. `canonical`, `og:image`/Twitter Card por página e dados estruturados (JSON-LD, `Dentist`, com o endereço/telefone/CRO) nas 4 páginas, verificados em produção — ver Decisão 024.
+- **Imagens-fonte:** comprimidas em 10/11/2026, `public/images` caiu de ~120MB para ~8MB, sem perda visual — ver Decisão 025. Script reutilizável em `site/scripts/compress-source-images.mjs` para fotos novas.
 - **Rodapé:** endereço completo (Av. Mal. Floriano Peixoto, 306 – Conj. 61 – Centro, Curitiba – PR, 80010-130), igual ao Perfil da Empresa no Google (já existia e está correto).
 
 ## 2. Variáveis de ambiente / credenciais (não estão em nenhum arquivo do repositório)
