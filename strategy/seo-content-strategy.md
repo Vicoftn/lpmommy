@@ -83,7 +83,9 @@ Definida após análise comparativa com concorrente real (fordermclinic.com.br).
 - Portfolio (`/`) ganha uma seção nova, estilo carrossel, com fotos reais de procedimento em andamento (sem preço, sem nome técnico, sem CTA de venda — só uma frase curta + link para `/paciente`). **Emenda a Decisão 002** — ver `knowledge/05-decision-log.md`, Decisão 022, para o racional completo.
 - Sem item novo no header/Nav global por ora (decisão explícita do usuário — manter a Nav minimalista atual).
 
-**Antes/depois:** avaliado e **não implementado**. Depende de confirmação direta da Dra. Ana, possivelmente com advogado — risco regulatório específico da profissão dela (CFO), diferente do que uma concorrente de outra categoria profissional enfrentaria. Detalhe completo na Decisão 022.
+**Antes/depois:** aprovado pela Dra. Ana (Decisão 027, 24/11/2026). Toda foto exige autorização do paciente; cada par antes/depois leva um aviso curto de que o resultado varia por paciente. Ainda depende do material (fotos + lista de procedimentos) que a Dra. Ana enviar.
+
+**Fotos de marcação/avaliação (Visagismo em ação):** tipo de foto priorizado pro carrossel do Portfolio e para `/aluno` — ver Decisão 026.
 
 **Avaliações/depoimentos:** mantidos como estão (vídeos do YouTube). Widget de reviews do Google avaliado e descartado por ora.
 
@@ -120,7 +122,8 @@ Definida após análise comparativa com concorrente real (fordermclinic.com.br).
 ## 7. Pendências abertas
 
 1. Lista de procedimentos que a Dra. Ana realiza de fato (bloqueia a implementação do pilar "Procedimentos") — aguardando conversa do usuário com a Dra.
-2. Confirmação da Dra. Ana (e possivelmente advogado) sobre usar ou não antes/depois nas páginas de procedimento (Decisão 022).
-3. Validação jurídica (CFO) antes de publicar qualquer página de procedimento, independente do antes/depois.
+2. Validação jurídica (CFO) antes de publicar qualquer página de procedimento, independente do antes/depois.
+
+~~Confirmação da Dra. Ana sobre usar ou não antes/depois~~ — resolvido, aprovado (Decisão 027, 24/11/2026).
 
 ~~Endereço exato do Perfil da Empresa~~ — resolvido (Decisão 020, rodapé atualizado). ~~Redirects + página 404~~ — resolvido, no ar desde 30/09/2026.

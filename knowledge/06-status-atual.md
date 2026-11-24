@@ -1,6 +1,6 @@
 # Status atual do projeto
 
-Última atualização: 10/11/2026. Este documento é o ponto de partida pra retomar o projeto — resume o estado real das coisas sem precisar ler o `05-decision-log.md` inteiro. Em caso de dúvida sobre o porquê de alguma decisão, o decision-log tem o detalhe; este arquivo só diz **onde as coisas estão agora**.
+Última atualização: 24/11/2026. Este documento é o ponto de partida pra retomar o projeto — resume o estado real das coisas sem precisar ler o `05-decision-log.md` inteiro. Em caso de dúvida sobre o porquê de alguma decisão, o decision-log tem o detalhe; este arquivo só diz **onde as coisas estão agora**.
 
 Se você é um Claude novo retomando este projeto: leia este arquivo, depois `05-decision-log.md` por cima, e os arquivos de `strategy/` e `knowledge/` conforme a tarefa pedir. Os repositórios são:
 
@@ -31,18 +31,20 @@ Configuradas direto no painel da Vercel (Project → Settings → Environment Va
 
 ## 3. O que está decidido mas ainda não implementado — bloqueado por conteúdo da Dra.
 
-Arquitetura e template já definidos (Decisões 022 e 023), só falta o conteúdo real. **Pendências que destravam tudo isso, todas dependem de uma conversa do usuário com a Dra. Ana:**
+Arquitetura e template já definidos (Decisões 022 e 023); antes/depois já aprovado pela Dra. (Decisão 027). Só falta o conteúdo real. **Pendências que destravam tudo isso, todas dependem de uma conversa do usuário com a Dra. Ana:**
 
 1. **Lista real dos procedimentos** que ela realiza (nome, o que é, como ela avalia antes de indicar).
-2. **Decisão sobre antes/depois** nas páginas de procedimento — precisa do aval dela (e possivelmente advogado), por causa das regras do CFO. Ver Decisão 022 pro racional completo (inclusive por que copiar o que uma concorrente faz não é seguro aqui).
+2. **Fotos** — priorizar fotos dela marcando/avaliando o rosto do paciente e explicando (Decisão 026), e fotos de antes/depois por procedimento (Decisão 027 — cada uma precisa de autorização do paciente).
 3. **Datas e números das turmas de Mentoria VIP Full Face** já ministradas, pra seção "Turmas realizadas".
 
 Quando isso chegar, implementar nesta ordem (tudo já desenhado, só falta o conteúdo):
 
-- `/procedimentos` (hub, grid de cards) + `/procedimentos/[slug]` (template: intro → como funciona → para quem é indicada → o que pode proporcionar → CTA de WhatsApp específico → relacionados). Título de cada página: "`[Procedimento] em Curitiba`".
+- `/procedimentos` (hub, grid de cards) + `/procedimentos/[slug]` (template: intro → como funciona → para quem é indicada → o que pode proporcionar → antes/depois com autorização + aviso de variação de resultado → CTA de WhatsApp específico → relacionados). Título de cada página: "`[Procedimento] em Curitiba`".
 - Seção nova dentro de `/paciente` com os cards de procedimento.
-- Seção nova no Portfolio (`/`): carrossel de fotos reais de procedimento acontecendo, sem preço, sem venda, link pra `/paciente` (emenda a Decisão 002, ver Decisão 022).
+- Seção nova no Portfolio (`/`): carrossel de fotos reais de procedimento acontecendo, priorizando fotos de marcação/avaliação (Decisão 026), sem preço, sem venda, link pra `/paciente` (emenda a Decisão 002, ver Decisão 022).
 - Seção "Turmas realizadas" dentro de `/aluno` (lista/timeline, não páginas individuais por turma — risco de conteúdo fino).
+
+Ainda pendente, independente do antes/depois: validação jurídica geral (CFO) antes de publicar qualquer página de procedimento.
 
 ## 4. O que foi avaliado e descartado (não repetir)
 

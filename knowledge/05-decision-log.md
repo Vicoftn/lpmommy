@@ -229,6 +229,36 @@ Script reutilizável adicionado em `site/scripts/compress-source-images.mjs`, pa
 
 ---
 
+## Decisão 026
+
+Aditivo à Decisão 022 (carrossel de fotos reais no Portfolio): o tipo de foto prioritário a pedir pra Dra. Ana é ela **marcando/avaliando o rosto do paciente e explicando** (leitura de Visagismo em ação), não só "procedimento acontecendo" de forma genérica. Sugerido em 24/11/2026, pelo usuário.
+
+Motivo: é a prova visual mais direta do próprio conceito central da marca ("ler o rosto antes de tocá-lo") — mais forte como prova de método do que uma foto só de técnica. Serve às duas pontas sem criar conteúdo duplicado:
+
+- **Paciente:** entra no carrossel do Portfolio já aprovado (Decisão 022) — reduz o medo de "procedimento às cegas", mostra análise antes de intervenção.
+- **Aluno:** reforça com imagem real a promessa já existente em `/aluno` de "hands-on e atendimento clínico em pacientes" durante a formação.
+
+Recomendação registrada pra quando o pedido de fotos for feito à Dra.: preferir ângulos em que o paciente não fique totalmente identificável de frente, a menos que ele já tenha autorizado aparecer — reduz a exigência de autorização de imagem por foto e mantém o foco na Dra. Isso não substitui a exigência de autorização sempre que o rosto do paciente for reconhecível (ver Decisão 027).
+
+Ainda bloqueado pelo mesmo motivo de sempre: depende da sessão de fotos / material que a Dra. Ana enviar.
+
+---
+
+## Decisão 027
+
+**Antes/depois nas páginas de procedimento: aprovado.** Confirmado em 24/11/2026 pelo usuário, que conversou diretamente com a Dra. Ana — ela quer usar antes/depois. Isso resolve o bloqueio registrado na Decisão 022 (que exigia confirmação direta dela, por risco regulatório específico do CFO para cirurgiões-dentistas).
+
+Condições registradas junto com a aprovação:
+
+1. **Toda foto de antes/depois precisa de autorização do paciente**, sem exceção — essa exigência não muda com a aprovação do formato; é uma camada separada (LGPD/direito de imagem) que vale pra cada paciente individualmente, não uma autorização genérica única.
+2. **Aviso de que o resultado varia de paciente para paciente** deve acompanhar o antes/depois. Recomendação registrada (decisão de implementação, não só documento interno): colocar uma linha curta e discreta junto de cada par de fotos na própria página de procedimento (ex.: "Resultado individual — pode variar de paciente para paciente"), no mesmo tom sóbrio do Brand Book — não como aviso jurídico extenso, mas como frase natural. Motivo de recomendar isso no site, não só em formulário de consentimento interno: é exatamente o tipo de cautela que o CFO cobra (não prometer resultado igual/garantido), e tem custo de implementação praticamente zero.
+
+**Não registrado como confirmado:** se um advogado da Dra. revisou especificamente esse formato — a Decisão 022 mencionava isso como possível, não obrigatório. Se isso for relevante, vale confirmar com ela antes de publicar a primeira página de procedimento com antes/depois.
+
+Ainda bloqueado pelo mesmo motivo de sempre: depende da lista de procedimentos e do material de fotos que a Dra. Ana enviar (ver Decisão 015/022). A pendência nº 3 da seção 7 de `strategy/seo-content-strategy.md` (validação jurídica geral do CFO antes de publicar qualquer página de procedimento) continua de pé, independente do antes/depois.
+
+---
+
 ## Próximas decisões
 
 Registrar todas as mudanças importantes aprovadas durante o projeto.
